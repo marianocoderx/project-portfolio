@@ -1,0 +1,31 @@
+/*navigation.css*/
+
+.navigationContainer{
+
+    /*measures*/
+    height: 100px;
+    width: 100%;
+
+    /*alignment*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: fixed;
+
+    color: aliceblue;
+    background-color: darkblue;
+}
+
+.navigationOptions{
+
+    /*appereance*/
+    list-style-type: none;
+    gap:20px;
+
+    /*alignment*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ 
+}
