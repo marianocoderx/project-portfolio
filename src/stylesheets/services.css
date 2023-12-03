@@ -1,0 +1,109 @@
+.servicesContainer{
+
+    height: 1000px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 150px;
+    padding-bottom: 250px;
+
+    background-image: url(../images/messageComp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.servicesContainer h1{
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 1px;
+    color: #d9a030;
+}
+
+.servicesContainer p{
+    /*style*/
+    line-height: 1.9;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    color: aliceblue;
+}
+
+
+.gridServices{
+
+    padding: 2em;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+
+    padding:30px 100px 30px 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .gridServices {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesContainer {
+        height: 1500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicesContainer h1 {
+        font-size: 1.5rem; /* Ajusta según sea necesario para pantallas más pequeñas */
+    }
+
+    .servicesContainer p {
+        font-size: small; /* Ajusta según sea necesario para pantallas más pequeñas */
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cardContent {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+        padding: 2em;
+    }
+
+    .cardTitle {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gridServices {
+        padding: 15px;
+    }
+
+    .servicesContainer h1 {
+        font-size: 1.2rem; /* Ajusta según sea necesario para pantallas aún más pequeñas */
+    }
+
+    .servicesContainer p {
+        font-size: 0.8rem; /* Ajusta según sea necesario para pantallas aún más pequeñas */
+    }
+
+    .cardContent {
+        text-align: center;
+        font-size: 0.7rem; /* Ajustar el tamaño del texto para pantallas aún más pequeñas */
+    }
+
+    .cardTitle {
+        font-size: 1rem; /* Ajustar el tamaño del texto para pantallas aún más pequeñas */
+    }
+
+    .gridServices figure {
+        width: 100%;
+    }
+}

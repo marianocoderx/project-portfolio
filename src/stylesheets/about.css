@@ -1,0 +1,89 @@
+/* about.css */
+
+.aboutContainer {
+  height: 800px;
+  width: 100%;
+  line-height: 1.9;
+  letter-spacing: 1px;
+}
+
+.selfDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.selfDescription img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.selfDescription p {
+  padding: 0px 150px 0px 150px;
+  font-family: Montserrat, sans-serif;
+  font-size: medium;
+  letter-spacing: 1px;
+}
+
+.selfDescription h1 {
+  color: #d9a030;
+  font-family: Bebas Neue, sans-serif;
+  letter-spacing: 1px;
+}
+
+
+/* Media Queries */
+
+/* Pantallas pequeñas (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    height: 800px; /* Aumenta la altura del contenedor */
+  }
+
+  .selfDescription img {
+    max-width: 40%; /* Disminuye el tamaño de la imagen */
+  }
+
+  .selfDescription p {
+    padding: 0px 30px; /* Aumenta el padding */
+    font-size: small; /* Disminuye el tamaño de la letra */
+  }
+}
+
+/* Pantallas medianas (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .aboutContainer {
+    height: 900px; /* Aumenta la altura del contenedor */
+  }
+
+  .selfDescription img {
+    max-width: 50%; /* Disminuye el tamaño de la imagen */
+  }
+
+  .selfDescription p {
+    padding: 0px 60px; /* Aumenta el padding */
+    font-size: small; /* Disminuye el tamaño de la letra */
+  }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media screen and (min-width: 1025px) {
+  .aboutContainer {
+    height: 800px; /* Mantiene la altura del contenedor */
+  }
+
+  .selfDescription img {
+    max-width: 70%; /* Mantiene el tamaño de la imagen */
+  }
+
+  .selfDescription p {
+    padding: 0px 150px; /* Mantiene el padding */
+    font-size: medium; /* Mantiene el tamaño de la letra */
+  }
+}
+  

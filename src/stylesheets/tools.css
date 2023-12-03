@@ -1,0 +1,133 @@
+/* Estilos CSS */
+/*tools.css*/
+.grid-bigContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding: 100px 300px 100px 300px;
+
+    padding: 5em;
+  }
+
+  .text-grid-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 30px 200px 30px 200px;
+  }
+
+  .text-grid-container h2{
+    color:#d9a030;
+    font-family: Bebas Neue, Sans-serif;
+    letter-spacing: 1px;
+    
+  }
+
+  .text-grid-container p{
+    /*style*/
+    line-height: 1.9;
+    letter-spacing: 1px;
+    font-family: Montserrat,sans-serif;
+  }
+
+  .text-grid-container img {
+    height: 200px;
+    width: 200px;
+    padding: 2em;
+  }
+  
+  .grid-item {
+    text-align: center;
+    
+  }
+  
+  .icon {
+    width: 170px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    height: 170px;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+/* Pantallas pequeñas (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .text-grid-container {
+    padding: 20px; /* Ajuste de padding izquierdo y derecho más corto */
+    height: auto; /* Ajuste de altura para pantallas pequeñas */
+    border: 3px dotted red;
+    padding-bottom: 50px;
+  }
+
+  .text-grid-container h2 {
+    font-size: 1.2em; /* Ajuste de tamaño de letra para pantallas pequeñas */
+  }
+
+  .text-grid-container p {
+    font-size: 0.7em; /* Ajuste de tamaño de letra para pantallas pequeñas */
+  }
+
+  .text-grid-container img {
+    height: 120px; /* Ajuste del tamaño de las imágenes para pantallas pequeñas */
+    width: 120px; /* Ajuste del tamaño de las imágenes para pantallas pequeñas */
+    padding: 1em; /* Puedes ajustar el padding según tus necesidades */
+  }
+
+  .grid-container {
+    padding: 0 10px; /* Ajuste de padding izquierdo y derecho más corto */
+    height: auto; /* Ajuste de altura del contenedor principal para pantallas pequeñas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de tres */
+    padding-bottom: 100px;
+  }
+
+  .grid-item {
+    /* Ajustes para pantallas pequeñas */
+    padding: 1em; /* Puedes ajustar el padding según tus necesidades */
+  }
+}
+
+/* Pantallas medianas (769px a 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .text-grid-container {
+    padding: 30px 150px 30px 150px; /* Ajuste de padding izquierdo y derecho */
+    height: auto; /* Ajuste de altura para pantallas medianas */
+  }
+
+  .text-grid-container h2 {
+    font-size: 1.3em; /* Ajuste de tamaño de letra para pantallas medianas */
+  }
+
+  .text-grid-container p {
+    font-size: 0.8em; /* Ajuste de tamaño de letra para pantallas medianas */
+  }
+
+  .text-grid-container img {
+    height: 150px; /* Ajuste del tamaño de las imágenes para pantallas medianas */
+    width: 150px; /* Ajuste del tamaño de las imágenes para pantallas medianas */
+    padding: 1em; /* Puedes ajustar el padding según tus necesidades */
+  }
+
+  .grid-item {
+    /* Ajustes para pantallas medianas */
+    padding: 1.5em; /* Puedes ajustar el padding según tus necesidades */
+  }
+}
+
+/* Pantallas más grandes (1025px y superior) */
+@media screen and (min-width: 1025px) {
+  .text-grid-container img {
+    height: 200px; /* Ajuste del tamaño de las imágenes para pantallas más grandes */
+    width: 200px; /* Ajuste del tamaño de las imágenes para pantallas más grandes */
+  }
+
+}

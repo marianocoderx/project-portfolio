@@ -1,13 +1,37 @@
-import React from "react";
+// subcomponents/button.jsx
+import React, { useState } from "react";
 
-import "../stylesheets/button.css";
+export default function ButtonComp({ name, link, height, width, borderRadius, border, bgColor, hoverBgColor, display, justifyContent, alignItems, color, hoverColor }) {
+  const [isHovered, setIsHovered] = useState(false);
 
-export default function ButtonComp (props) {
+  const buttonStyle = {
+    height,
+    width,
+    borderRadius,
+    border,
+    backgroundColor: isHovered ? hoverBgColor : bgColor,
+    display,
+    justifyContent,
+    alignItems,
+    color: isHovered ? hoverColor : color,
+    textDecoration: 'none',
+    transition: 'background-color 0.3s, color 0.3s', // Añade una transición suave
+  };
+
+  const handleClick = () => {
+    window.open(link, "_blank"); // Abre el enlace en una nueva pestaña
+  };
+
   return (
-    <>
-      <button className="buttonContainer">
-        {props.name}
-      </button>
-    </>
-  )
+    <button
+      style={buttonStyle}
+      onClick={handleClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {name}
+    </button>
+  );
 }
+
+

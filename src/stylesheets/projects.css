@@ -1,0 +1,87 @@
+.mainContainerProjects {
+    height: 900px; /* Altura por defecto para pantallas más grandes */
+    width: 100%;
+    background-image: url(../images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
+.titleContainerProjects {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 1px;
+}
+
+.titleContainerProjects :first-child {
+    font-family: Bebas Neue, sans-serif;
+    color: #d9a030;
+}
+
+.titleContainerProjects :nth-child(2) {
+    font-family: Montserrat, sans-serif;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.cardsContainerProjects {
+    height: 70%;
+    width: 100%;
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Media Query para pantallas más pequeñas (máximo 768px) */
+@media only screen and (max-width: 768px) {
+    .mainContainerProjects {
+        height: 1000px; /* Ajusta la altura del contenedor para pantallas más pequeñas */
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleContainerProjects{
+        height: 200px;
+    }
+
+    .titleContainerProjects :first-child {
+        font-size: 1.5rem; /* Ajusta el tamaño de letra para pantallas más pequeñas */
+    }
+
+    .titleContainerProjects :nth-child(2) {
+        font-size: small;
+        padding: 2em;
+        text-align: center;
+        height: auto;
+    }
+
+    .cardsContainerProjects {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a una columna para pantallas más pequeñas */
+    }
+}
+
+/* Media Query para pantallas más pequeñas (máximo 480px) */
+@media only screen and (max-width: 480px) {
+    .mainContainerProjects {
+        height: 1500px; /* Ajusta la altura del contenedor para pantallas aún más pequeñas */
+    }
+
+    .titleContainerProjects :first-child {
+        font-size: 1.2rem; /* Ajusta el tamaño de letra para pantallas aún más pequeñas */
+    }
+
+    .cardsContainerProjects {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a una columna para pantallas aún más pequeñas */
+    }
+}

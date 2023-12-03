@@ -1,31 +1,84 @@
-/*navigation.css*/
+/* navigation.css */
 
-.navigationContainer{
+.navigationContainer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  position: fixed;
+  color: rgb(180, 186, 192);
+  background-color: black;
 
-    /*measures*/
-    height: 100px;
-    width: 100%;
+  font-family: Montserrat, Sans-serif;
+  font-size: small;
 
-    /*alignment*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2em;
-    position: fixed;
-
-    color: aliceblue;
-    background-color: darkblue;
+  z-index: 1000;
 }
 
-.navigationOptions{
-
-    /*appereance*/
-    list-style-type: none;
-    gap:20px;
-
-    /*alignment*/
-    display: flex;
-    align-items: center;
-    flex-direction: row;
- 
+.navigationOptions {
+  list-style-type: none;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
+
+.navigationItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigationItem a:hover {
+  color: white;
+}
+
+/* Media Queries */
+
+.navigationOptions {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1018px) {
+  
+  .navigationOptions {
+    max-height: 0; /* Añadido */
+    overflow: hidden; /* Añadido */
+    transition: max-height 0.3s ease-in-out; /* Añadido */
+    align-items: flex-start; /* Añadido, alinea las opciones a la izquierda */
+    gap: 30px; /* Añadido, aumenta la distancia entre las opciones del menú */
+  }
+  
+  .menuButton {
+    background-color: black; /* Añadido */
+    color: white;
+    width: auto; /* Añadido */
+    justify-content: flex-start; /* Añadido */
+  }
+
+  /* Estilos para el menú hamburguesa en lugar de la lista */
+  .navigationContainer.open .navigationOptions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    max-height: 500px; /* Añadido, ajusta este valor según tus necesidades */
+  }
+
+  .navigationContainer.open .navigationOptions .navigationItem {
+    margin: 10px;
+  }
+
+  .navigationContainer.open .navigationOptions .navigationItem:last-child {
+    padding-bottom: 20px; /* Añadido, añade más padding al último elemento */
+  }
+}
+
+

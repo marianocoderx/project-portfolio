@@ -1,32 +1,87 @@
 /* header.css */
 header {
-    /* Measures */
-    height: 700px;
-    width: 100%;
-    background-color: red;
-    
-    /* grid */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dividir en dos columnas */
-    grid-template-rows: 1fr;
-    align-items: center; /* Centrar verticalmente */
-    justify-items: center; /* Centrar horizontalmente */
+  height: 700px;
+  width: 100%;
+  background-image: url('../images/coding2.jpg');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 6em;
+}
+
+.text :first-child {
+  padding-bottom: 10px;
+  color: #d9a030;
+  font-family: Bebas Neue, sans-serif;
+  letter-spacing: 2px;
+}
+
+.text p{
+  color: aliceblue;
+  font-family: Montserrat, Sans-serif;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding-top: 20px;
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    grid-template-rows: 1fr; /* Solo una fila en pantallas pequeñas */
+    height: 700px; /* Ajusta la altura automáticamente */
+    padding: 4em 2em; /* Padding ajustado, con más espacio en la parte superior */
+    text-align: center; /* Centra el contenido en pantallas pequeñas */
+  }
+
+  .buttons {
+    flex-direction: column; /* Cambia a dirección de columna en pantallas pequeñas */
+    align-items: center; /* Centra los botones */
+    margin-top: 30px; /* Ajusta el espacio entre los botones y el texto */
+  }
+
+  .text {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+    height: 100%; /* Ajusta la altura del contenedor de texto */
+  }
+
+  .text h1 {
+    font-size: 1.5em; /* Tamaño de fuente ajustado */
+  }
+
+  .text p {
+    font-size: 0.8em; /* Tamaño de fuente ajustado */
+  }
+}
+
+
+
+
+/* Pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 4em;
+  }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 1025px) {
+  header {
     padding: 6em;
   }
+}
 
-  .text :first-child{
-    padding-bottom: 10px;
-  }
-  
-  .buttons {
-
-    /*flex*/
-    display: flex;
-    align-items: flex-start;
-    gap: 17px;
-
-    padding-top: 20px;
-
-
-  }
   

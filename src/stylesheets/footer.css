@@ -1,7 +1,7 @@
 .footerContainer{
 
     /*measures*/
-    height: 100px;
+    height: 150px;
     width: 100%;
 
     /*alignment*/
@@ -10,9 +10,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 15px;
 
     /*appereance*/
-    border: 3px dotted blue;
+    background-color: grey;
+    font-family: Montserrat, Sans-serif;
+    font-size: small;
+    letter-spacing: 1px;
+    color: aliceblue;
 }
 
 .footerOptions{
@@ -26,4 +31,40 @@
     /*appereance*/
     list-style-type: none;
     gap:30px;
+}
+
+.footerOptions a {
+    /* Estilo predeterminado para los enlaces */
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .footerOptions a:hover,
+  .footerOptions a:visited {
+    /* Estilo al pasar el ratón sobre los enlaces y cuando han sido visitados */
+    text-decoration: none;
+    color: inherit;
+  }
+  
+/* Media Query para pantallas más pequeñas (máximo 768px) */
+@media only screen and (max-width: 768px) {
+  .footerContainer {
+    height: 290px;
+    align-items: center; /* Alinea verticalmente en el centro */
+    justify-content: center;
+  }
+
+  .footerOptions {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 20px;
+    padding-right: 32px;
+    align-items: center; /* Alinea verticalmente en el centro */
+  }
+
+  .copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 }
