@@ -1,7 +1,6 @@
 /* navigation.css */
-
 .navigationContainer {
-  height: 80px;
+  height: 8vh; /* Ajustado a 8% de la altura de la ventana gráfica */
   width: 100%;
   display: flex;
   justify-content: space-between;
