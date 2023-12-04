@@ -6,7 +6,7 @@ import "../stylesheets/tools.css";
 import BootstrapLogo from "../images/Bootstrap.png";
 import CssLogo from "../images/CSS.png";
 import HtmlLogo from "../images/HTML.png";
-import JavaLogo from "../images/java.png";
+/*import JavaLogo from "../images/java.png";*/
 import JavascriptLogo from "../images/JS.png";
 import NodeLogo from "../images/NodeJS.png";
 import PythonLogo from "../images/Python.png";
@@ -23,7 +23,7 @@ export default function ToolsComp () {
         BootstrapLogo,
         CssLogo,
         HtmlLogo,
-        JavaLogo,
+        {/*JavaLogo,*/},
         JavascriptLogo,
         NodeLogo,
         PythonLogo,
