@@ -1,9 +1,10 @@
+/* header.css */
 header {
-  height: 100vh; /* Cambiado a 100vh para ocupar toda la altura de la ventana gráfica */
+  height: 700px;
   width: 100%;
   background-image: url('../images/coding2.jpg');
   background-attachment: fixed;
-  background-repeat: no-repeat; /* Cambiado a no-repeat para evitar repeticiones */
+  background-repeat: repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -20,7 +21,7 @@ header {
   letter-spacing: 2px;
 }
 
-.text p {
+.text p{
   color: aliceblue;
   font-family: Montserrat, Sans-serif;
   font-size: small;
@@ -39,32 +40,35 @@ header {
 /* Pantallas pequeñas */
 @media screen and (max-width: 768px) {
   header {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: auto; /* Cambiado a auto para adaptarse al contenido */
-    padding: 4em 2em;
-    text-align: center;
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    grid-template-rows: 1fr; /* Solo una fila en pantallas pequeñas */
+    height: 700px; /* Ajusta la altura automáticamente */
+    padding: 4em 2em; /* Padding ajustado, con más espacio en la parte superior */
+    text-align: center; /* Centra el contenido en pantallas pequeñas */
   }
 
   .buttons {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+    flex-direction: column; /* Cambia a dirección de columna en pantallas pequeñas */
+    align-items: center; /* Centra los botones */
+    margin-top: 30px; /* Ajusta el espacio entre los botones y el texto */
   }
 
   .text {
-    text-align: center;
-    height: 100%;
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+    height: 100%; /* Ajusta la altura del contenedor de texto */
   }
 
   .text h1 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Tamaño de fuente ajustado */
   }
 
   .text p {
-    font-size: 0.8em;
+    font-size: 0.8em; /* Tamaño de fuente ajustado */
   }
 }
+
+
+
 
 /* Pantallas medianas */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
