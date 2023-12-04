@@ -117,7 +117,6 @@
     padding-left: 0px;
     padding-right: 0px;
 
-    border: 3px dotted red;
   }
 
   .image-container {
@@ -128,7 +127,6 @@
       border-radius: 150px; /* Ajustado el valor del border-radius */
       margin-bottom: 1px; /* Agregado espacio entre las imágenes */
 
-    border: 3px dotted green;
   }
 
   .Icon{
@@ -137,7 +135,6 @@
   }
 
   .gridContainer{
-    border: 3px dotted blue;
     padding-left: 20px;
     padding-right: 20px;
     height: 2200px; /* Ajuste de altura para adaptarse al contenido */
