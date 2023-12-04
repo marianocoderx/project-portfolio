@@ -70,7 +70,7 @@
 
   }
 
-  .text-grid-container h2 {
+  .text-grid-container h1 {
     font-size: 1.2em; /* Ajuste de tamaño de letra para pantallas pequeñas */
     padding-left: 20px;
     padding-right: 20px;
@@ -78,8 +78,8 @@
 
   .text-grid-container p {
     font-size: 0.8em; /* Ajuste de tamaño de letra para pantallas pequeñas */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 25px;
   }
 
