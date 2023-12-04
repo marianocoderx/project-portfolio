@@ -91,9 +91,21 @@ Button:hover {
 
 /* Media Query para pantallas más pequeñas (máximo 480px) */
 @media only screen and (max-width: 480px) {
+
+  .formContainer {
+    width: 100%; /* Abarcar todo el ancho para pantallas aún más pequeñas */
+  }
+
+  .form-control,
+  textarea,
+  Button {
+    padding: 8px; /* Ajusta aún más el espacio interno de los campos de entrada y el botón para pantallas aún más pequeñas */
+    margin-bottom: 10px; /* Aumenta aún más el espacio entre los campos de entrada y el botón para pantallas aún más pequeñas */
+    width: 100%;
+  }
+
   .formContainer {
     width: 95%; /* Aumenta aún más el ancho del formulario para pantallas aún más pequeñas */
-    padding: 15px; /* Ajusta aún más el espacio interno del formulario para pantallas aún más pequeñas */
   }
 
   .form-control,
@@ -112,7 +124,6 @@ Button:hover {
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 30px; /* Espacio interno del formulario por defecto */
 }
 
 .form-group {

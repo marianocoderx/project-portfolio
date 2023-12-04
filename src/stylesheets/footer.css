@@ -49,14 +49,15 @@
 /* Media Query para pantallas más pequeñas (máximo 768px) */
 @media only screen and (max-width: 768px) {
   .footerContainer {
-    height: 290px;
+    height: 300px;
     align-items: center; /* Alinea verticalmente en el centro */
     justify-content: center;
   }
 
   .footerOptions {
+    font-size: 0.8em;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     padding-top: 20px;
     padding-right: 32px;
     align-items: center; /* Alinea verticalmente en el centro */
@@ -64,7 +65,8 @@
 
   .copyright {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    font-size: 0.8em;
   }
 
 }

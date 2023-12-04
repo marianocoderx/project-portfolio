@@ -65,16 +65,20 @@
   .text-grid-container {
     padding: 20px; /* Ajuste de padding izquierdo y derecho más corto */
     height: auto; /* Ajuste de altura para pantallas pequeñas */
-    border: 3px dotted red;
     padding-bottom: 50px;
+    padding-top: 0px;
   }
 
   .text-grid-container h2 {
     font-size: 1.2em; /* Ajuste de tamaño de letra para pantallas pequeñas */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .text-grid-container p {
     font-size: 0.7em; /* Ajuste de tamaño de letra para pantallas pequeñas */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .text-grid-container img {

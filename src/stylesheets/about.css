@@ -42,7 +42,7 @@
 /* Pantallas pequeñas (hasta 768px) */
 @media screen and (max-width: 768px) {
   .aboutContainer {
-    height: 800px; /* Aumenta la altura del contenedor */
+    height: 930px; /* Aumenta la altura del contenedor */
   }
 
   .selfDescription img {
@@ -51,7 +51,7 @@
 
   .selfDescription p {
     padding: 0px 30px; /* Aumenta el padding */
-    font-size: small; /* Disminuye el tamaño de la letra */
+    font-size: 0.7em; /* Disminuye el tamaño de la letra */
   }
 }
 
