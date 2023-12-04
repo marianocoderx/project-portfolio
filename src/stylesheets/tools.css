@@ -8,15 +8,48 @@
 
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-content: center;
-    padding: 100px 300px 100px 300px;
+.gridContainer {
+  height: 900px;
+  width: 100%;
+  padding: 30px 20px 30px 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-    padding: 5em;
-  }
+.image-grid {
+
+  height: 100%;
+  width: 100%;
+
+  padding: 3em;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Puedes ajustar el espacio entre las imágenes según tus preferencias */
+}
+
+.image-container {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Icon {
+  height: 60%;
+  width: 60%;
+  object-fit: cover; /* Ajusta el contenido para llenar completamente el contenedor */
+}
+
 
   .text-grid-container{
     display: flex;
@@ -46,19 +79,6 @@
     padding: 2em;
   }
   
-  .grid-item {
-    text-align: center;
-    
-  }
-  
-  .icon {
-    width: 170px; /* Ajusta el tamaño de los iconos según tus preferencias */
-    height: 170px;
-    padding: 1em;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
 
 /* Pantallas pequeñas (hasta 768px) */
 @media screen and (max-width: 768px) {
@@ -67,7 +87,6 @@
     height: auto; /* Ajuste de altura para pantallas pequeñas */
     padding-bottom: 50px;
     padding-top: 0px;
-
   }
 
   .text-grid-container h1 {
@@ -89,18 +108,42 @@
     padding: 1em; /* Puedes ajustar el padding según tus necesidades */
   }
 
-  .grid-container {
-    padding: 0 10px; /* Ajuste de padding izquierdo y derecho más corto */
-    height: auto; /* Ajuste de altura del contenedor principal para pantallas pequeñas */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en lugar de tres */
-    padding-bottom: 100px;
+  .image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    border: 3px dotted red;
   }
 
-  .grid-item {
-    /* Ajustes para pantallas pequeñas */
-    padding: 1em; /* Puedes ajustar el padding según tus necesidades */
+  .image-container {
+    height: auto; /* Ajuste de altura para adaptarse al contenido */
+      height: 200px;
+      width: 100%;
+      max-width: 200px; /* Ajusta según tus necesidades */
+      border-radius: 150px; /* Ajustado el valor del border-radius */
+      margin-bottom: 1px; /* Agregado espacio entre las imágenes */
+
+    border: 3px dotted green;
+  }
+
+  .Icon{
+    height: 100px;
+    width: 100px;
+  }
+
+  .gridContainer{
+    border: 3px dotted blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 2200px; /* Ajuste de altura para adaptarse al contenido */
   }
 }
+
 
 /* Pantallas medianas (769px a 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -123,10 +166,6 @@
     padding: 1em; /* Puedes ajustar el padding según tus necesidades */
   }
 
-  .grid-item {
-    /* Ajustes para pantallas medianas */
-    padding: 1.5em; /* Puedes ajustar el padding según tus necesidades */
-  }
 }
 
 /* Pantallas más grandes (1025px y superior) */
