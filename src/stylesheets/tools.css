@@ -87,6 +87,7 @@
     height: auto; /* Ajuste de altura para pantallas pequeñas */
     padding-bottom: 50px;
     padding-top: 0px;
+
   }
 
   .text-grid-container h1 {
@@ -116,7 +117,7 @@
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
-
+    padding-top: 0px;
   }
 
   .image-container {
@@ -126,7 +127,6 @@
       max-width: 200px; /* Ajusta según tus necesidades */
       border-radius: 150px; /* Ajustado el valor del border-radius */
       margin-bottom: 1px; /* Agregado espacio entre las imágenes */
-
   }
 
   .Icon{
@@ -135,6 +135,7 @@
   }
 
   .gridContainer{
+    padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
     height: 2200px; /* Ajuste de altura para adaptarse al contenido */
