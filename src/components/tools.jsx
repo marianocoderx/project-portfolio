@@ -55,7 +55,14 @@ export default function ToolsComp() {
         </div>
 
         <div className="gridContainer">
+
+            <div className="text-image-grid">
+                <h1>Herramientas</h1>
+                <p>Estas son algunas tecnologias que utilizo:</p>
+            </div>
+
           <div className="image-grid">
+
             {images.map((image, index) => (
 
               <div key={index} className="image-container">
@@ -72,7 +79,7 @@ export default function ToolsComp() {
               </div>
 
             ))}
-            
+
           </div>
         </div>
       </div>
