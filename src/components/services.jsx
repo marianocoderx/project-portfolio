@@ -17,24 +17,7 @@ export default function ServicesComp() {
 
   return (
     <>
-      <div id="servicesSection" className="servicesContainer">
-        <div className="text-servicesContainer">
-          <h1>¿Necesitas ayuda? Puedo darte soluciones.</h1>
-          <p>Puedo contribuir a tus proyectos, para que tus aplicaciones sean óptimas.</p>
-        </div>
-
-        <div className="gridServices">
-          {servicesInformation.map((service) => (
-            <CardComp
-              key={service.id}
-              title={service.service}
-              img={service.img}
-              width="380px"
-              height="250px"
-              />
-            ))}
-          </div>
-      </div>
+      
     </>
   );
 }

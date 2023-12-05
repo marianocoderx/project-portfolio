@@ -47,6 +47,7 @@
     padding:30px 100px 30px 100px;
 }
 
+/* Media Query for screens with a maximum width of 768px */
 @media only screen and (max-width: 768px) {
     .gridServices {
         grid-template-columns: 1fr;
@@ -54,58 +55,34 @@
 
     .servicesContainer {
         height: 1500px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* Existing styles */
     }
 
     .servicesContainer h1 {
-        font-size: 1.2em; /* Ajusta según sea necesario para pantallas más pequeñas */
+        font-size: 1.2em;
         padding-left: 30px;
         padding-right: 30px;
     }
 
     .text-servicesContainer p {
-        font-size: 0.8em; /* Ajusta según sea necesario para pantallas más pequeñas */
+        font-size: 0.8em;
         padding-left: 30px;
         padding-right: 30px;
     }
 
     .cardContent {
-        font-size: 0.8rem; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+        font-size: 0.8rem;
         padding: 2em;
     }
 
     .cardTitle {
-        font-size: 1.2rem; /* Ajustar el tamaño del texto para pantallas más pequeñas */
+        font-size: 1.2rem;
+    }
+
+    /* Add the following styles to adjust the border-radius for the images */
+    .cardImage {
+        border-radius: 10px; /* Adjust the border-radius for the images */
+        border: 3px dotted red;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .gridServices {
-        padding: 15px;
-    }
-
-    .servicesContainer h1 {
-        font-size: 1.2rem; /* Ajusta según sea necesario para pantallas aún más pequeñas */
-    }
-
-    .servicesContainer p {
-        font-size: 0.8rem; /* Ajusta según sea necesario para pantallas aún más pequeñas */
-    }
-
-    .cardContent {
-        text-align: center;
-        font-size: 0.7rem; /* Ajustar el tamaño del texto para pantallas aún más pequeñas */
-    }
-
-    .cardTitle {
-        font-size: 1rem; /* Ajustar el tamaño del texto para pantallas aún más pequeñas */
-    }
-
-    .gridServices figure {
-        width: 100%;
-    }
-}

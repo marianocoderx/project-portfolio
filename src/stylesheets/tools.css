@@ -108,6 +108,7 @@
     height: auto; /* Ajuste de altura para pantallas pequeñas */
     padding-bottom: 50px;
     padding-top: 0px;
+    
 
   }
 
@@ -122,6 +123,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 25px;
+    
   }
 
   .text-grid-container img {
