@@ -29,10 +29,10 @@ const servicesData = [
 export default function ServicesComp() {
   return (
     <>
-      <div className="mainContainer">
+      <div id="servicesSection" className="mainContainer">
         <div className="mainContainer-text">
           <h1>Necesitas algo? Puedo ayudarte...</h1>
-          <p>Soluciones a medida a tus necesidades.</p>
+          <p>Soluciones con medida a tus necesidades.</p>
         </div>
 
         <div className="mainContainer-body">
