@@ -7,7 +7,7 @@
   padding: 100px;
 }
 
-.contactContainer h1{
+.contactContainer h1 {
   font-family: Bebas Neue, sans-serif;
   letter-spacing: 1px;
   color: #d9a030;
@@ -19,135 +19,40 @@
 }
 
 .formContainer {
-  width: 80%; /* Aumenta el ancho del formulario */
-  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  width: 80%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 30px; /* Aumenta el espacio interno del formulario */
+  padding: 30px;
+  border: 1px solid #ccc; /* Borde gris suave */
 }
 
 .form-group {
   width: 100%;
-  margin-bottom: 25px; /* Aumenta el espacio entre los campos del formulario */
+  margin-bottom: 25px;
 }
 
 .form-control {
   width: 100%;
-  padding: 15px; /* Aumenta el espacio interno de los campos de entrada */
-  margin-bottom: 20px; /* Aumenta el espacio entre los campos de entrada */
-  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
   border-radius: 6px;
+  border: 1px solid #ccc; /* Borde gris suave */
 }
 
 textarea {
   width: 100%;
-  padding: 15px; /* Ajusta el espacio interno del área de texto */
+  padding: 15px;
   resize: vertical;
-}
-
-Button {
-  width: 100%;
-  padding: 15px; /* Aumenta el espacio interno del botón */
-  color: aliceblue;
-  border:none;
-  background-color: #1f1f1f;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-
-  font-family: Montserrat, sans-serif;
-  font-size:small;
-}
-
-Button:hover {
-  background-color: black;
-  color: aliceblue;
-}
-
-.alert {
-  width: 80%; /* Ajusta el ancho de la alerta */
-  max-width: 400px;
-  margin-top: 20px;
-}
-
-
-/* Media Query para pantallas más pequeñas (máximo 768px) */
-@media only screen and (max-width: 768px) {
-  .formContainer {
-    width: 90%; /* Aumenta el ancho del formulario para pantallas más pequeñas */
-    padding: 20px; /* Ajusta el espacio interno del formulario para pantallas más pequeñas */
-  }
-
-  .form-control,
-  textarea,
-  Button {
-    padding: 10px; /* Ajusta el espacio interno de los campos de entrada y el botón para pantallas más pequeñas */
-    margin-bottom: 15px; /* Aumenta el espacio entre los campos de entrada y el botón para pantallas más pequeñas */
-  }
-}
-
-/* Media Query para pantallas más pequeñas (máximo 480px) */
-@media only screen and (max-width: 480px) {
-
-  .formContainer {
-    width: 100%; /* Abarcar todo el ancho para pantallas aún más pequeñas */
-  }
-
-  .form-control,
-  textarea,
-  Button {
-    padding: 8px; /* Ajusta aún más el espacio interno de los campos de entrada y el botón para pantallas aún más pequeñas */
-    margin-bottom: 10px; /* Aumenta aún más el espacio entre los campos de entrada y el botón para pantallas aún más pequeñas */
-    width: 100%;
-  }
-
-  .formContainer {
-    width: 95%; /* Aumenta aún más el ancho del formulario para pantallas aún más pequeñas */
-  }
-
-  .form-control,
-  textarea,
-  Button {
-    padding: 8px; /* Ajusta aún más el espacio interno de los campos de entrada y el botón para pantallas aún más pequeñas */
-    margin-bottom: 10px; /* Aumenta aún más el espacio entre los campos de entrada y el botón para pantallas aún más pequeñas */
-  }
-}
-
-/* Estilos por defecto */
-.formContainer {
-  max-width: 800px; /* Ancho máximo para pantallas medianas y grandes */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.form-group {
-  width: 100%;
-  margin-bottom: 25px; /* Espacio entre los campos del formulario por defecto */
-}
-
-.form-control {
-  width: 100%;
-  padding: 15px; /* Espacio interno de los campos de entrada por defecto */
-  margin-bottom: 20px; /* Espacio entre los campos de entrada por defecto */
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* Borde gris suave */
   border-radius: 6px;
 }
 
-textarea {
-  width: 100%;
-  padding: 15px; /* Espacio interno del área de texto por defecto */
-  resize: vertical;
-}
-
 Button {
   width: 100%;
-  padding: 15px; /* Espacio interno del botón por defecto */
+  padding: 15px;
   color: aliceblue;
   border: none;
   background-color: #1f1f1f;
@@ -164,10 +69,29 @@ Button:hover {
 }
 
 .alert {
-  width: 80%; /* Ancho de la alerta por defecto */
+  width: 80%;
   max-width: 400px;
   margin-top: 20px;
 }
 
-  
-  
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    padding: 50px;
+  }
+
+  .formContainer {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-control,
+  textarea,
+  Button {
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+
+
