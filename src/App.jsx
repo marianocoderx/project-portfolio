@@ -15,7 +15,7 @@ export default function App () {
       <HeaderComp/>
       <AboutComp/>
       <ToolsComp/>
-      <ServicesComp/>
+      {/*<ServicesComp/>*/}
       {/*<ProjectsComp/>*/}
       <ContactComp/>
       <FooterComp/>

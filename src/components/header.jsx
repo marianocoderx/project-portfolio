@@ -7,7 +7,7 @@ import "../stylesheets/header.css";
 export default function HeaderComp() {
 
   const buttonNames = [
-    { id: 1, buttonName: 'LinkedIn', link:'https://www.linkedin.com/in/marianobugallo/', hoverBgColor: '#005783', hoverColor: '#ffffff' },
+    { id: 1, buttonName: 'LinkedIn', link:'https://www.linkedin.com/in/marianobugallo/', hoverBgColor: '#0077B5', hoverColor: '#ffffff' },
     { id: 2, buttonName: 'GitHub', link: 'https://github.com/marianocoderx', hoverBgColor: '#1c1c1c', hoverColor: '#ffffff' }
   ];
 

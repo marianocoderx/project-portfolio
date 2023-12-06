@@ -1,6 +1,42 @@
-.servicesContainer{
+.mainContainer {
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 867px;
+    width: 100%;
+}
 
-    height: 1000px;
+.mainContainerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.mainContainerText h1 {
+    font-family: Bebas Neue, sans-serif;
+    color: aliceblue;
+    font-size: medium;
+    padding-bottom: 20px;
+}
+
+.mainContainerText p {
+    font-family: Montserrat, sans-serif;
+    color: aliceblue;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.containerServices {
+    height: 710px;
+    padding: 1em;
+}
+
+.gridItem {
+    height: 100%;
     width: 100%;
 
     display: flex;
@@ -8,81 +44,60 @@
     justify-content: center;
     align-items: center;
 
-    text-align: center;
-
-    padding-top: 150px;
-    padding-bottom: 250px;
-
-    background-image: url(../images/messageComp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.servicesContainer h1{
-    font-family: Bebas Neue, sans-serif;
-    letter-spacing: 1px;
-    color: #d9a030;
-}
-
-.servicesContainer p{
-    /*style*/
-    line-height: 1.9;
-    letter-spacing: 1px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    font-family: Montserrat, sans-serif;
     color: aliceblue;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: 3px dotted red;
 }
 
 
-.gridServices{
-
-    padding: 2em;
-
+.gridContainerx {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:20px;
-
-    padding:30px 100px 30px 100px;
+    grid-template-rows: repeat(2, auto);
+    height: 630px;
 }
 
-/* Media Query for screens with a maximum width of 768px */
+.imageContainer{
+    height: 300px;
+    border: 3px dotted orange;
+}
+
+
+/* Estilos base */
+
+/* Media query para pantallas más pequeñas (ajusta según sea necesario) */
+/* Media query para pantallas más pequeñas (ajusta según sea necesario) */
 @media only screen and (max-width: 768px) {
-    .gridServices {
-        grid-template-columns: 1fr;
+    .mainContainer {
+        height: 1200px; /* Ajusta según tus necesidades */
     }
 
-    .servicesContainer {
-        height: 1500px;
-        /* Existing styles */
+    .mainContainerText {
+        height: 120px; /* Ajusta según tus necesidades */
+
     }
 
-    .servicesContainer h1 {
-        font-size: 1.2em;
-        padding-left: 30px;
-        padding-right: 30px;
+    .containerServices {
+        height: auto;
     }
 
-    .text-servicesContainer p {
-        font-size: 0.8em;
-        padding-left: 30px;
-        padding-right: 30px;
+    .gridContainerx {
+        display: block; /* Cambia el grid a bloque para que las tarjetas estén una debajo de la otra */
+        height: auto;
     }
 
-    .cardContent {
-        font-size: 0.8rem;
-        padding: 2em;
-    }
-
-    .cardTitle {
-        font-size: 1.2rem;
-    }
-
-    /* Add the following styles to adjust the border-radius for the images */
-    .cardImage {
-        border-radius: 10px; /* Adjust the border-radius for the images */
-        border: 3px dotted red;
+    .gridItem {
+        height: auto;
+        width: 100%; /* Ajusta según tus necesidades */
     }
 }
 
+
+/* Media query para pantallas medianas (ajusta según sea necesario) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Agrega tus estilos aquí para pantallas medianas */
+}

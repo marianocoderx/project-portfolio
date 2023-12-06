@@ -1,5 +1,22 @@
+/* En tu archivo card.css o donde tengas definidos los estilos de la tarjeta */
+  
+  .card-image{
+    border:3px dotted red;
+  }
+  
+.card-content{
+  border:3px dotted firebrick;
+  height: 80%;
+  width: 100%;
+}
 
-
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px dotted royalblue;
+}
 
 
 
