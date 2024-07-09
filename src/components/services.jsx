@@ -57,29 +57,6 @@ export default function ServicesComp() {
 
                   </div>
 
-
-                  <div className="mainContainer-grid-button">
-
-                    <Button 
-                      variant="primary" 
-                      style={{ 
-                        backgroundColor:'transparent',
-                        border:'2px solid aliceblue',
-                        width: '150px', 
-                        height: '40px', 
-                        display: 'flex', 
-                        flexDirection: 'column', 
-                        justifyContent: 'center', 
-                        alignItems: 'center',
-                        margin: 'auto'  // Añade esta línea para centrar horizontalmente
-                      }}
-                    >
-                    Ver más
-                    </Button> 
-
-
-                  </div>
-
                 </Card.Body>
 
               </Card>
