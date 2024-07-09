@@ -29,7 +29,7 @@ export default function FooterComp() {
       </ul>
 
       <div className="copyright">
-        <p>© 2023 Mariano Bugallo.</p>
+        <p>© 2024 Mariano Bugallo.</p>
       </div>
     </footer>
   );
